@@ -1,0 +1,900 @@
+:root {
+    --green: #03A081;
+    --light: #ffffff;
+    --gray: #373737;
+    --gray-text: #696969;
+    --green-dark: #02846A;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Evolventa";
+    src: url('./fonts/Evolventa-Regular.otf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Evolventa";
+    src: url('./fonts/Evolventa-Bold.otf');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url('./fonts/BebasNeue-Bold.ttf');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url('./fonts/BebasNeue-Regular.ttf');
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+body {
+    font-style: normal;
+    font-size: 14px;
+    font-family: 'Evolventa', sans-serif;
+    font-weight: 400;
+    background-color: #f5f4f5;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+ul,
+li {
+    list-style-type: none;
+    margin: 0;
+}
+
+
+
+.card-title {
+    font-family: "Bebas Neue";
+    color: var(--gray);
+}
+
+.card-text {
+    color: var(--gray-text);
+}
+
+.card-body {
+    padding: 1.8rem;
+}
+
+
+.text {
+    font-size: clamp(12px, 3vw, 14px);
+    color: var(--gray);
+}
+
+/* start header */
+
+.nav-link {
+    color: var(--gray);
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+.btn {
+    background-color: var(--green);
+    color: var(--light);
+    border: 0;
+    text-transform: uppercase;
+    border-top-left-radius: 47px;
+    border-bottom-left-radius: 47px;
+    border-bottom-right-radius: 47px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+header .btn {
+    background-color: transparent;
+    color: var(--green) !important;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    border-top-left-radius: 47px;
+    border-bottom-left-radius: 47px;
+    border-bottom-right-radius: 47px;
+    border: 1px solid var(--green);
+    letter-spacing: .5px;
+}
+
+.btn:hover {
+    background-color: var(--green-dark) !important;
+    color: var(--light) !important;
+
+}
+
+.navbar-collapse .collapse.show {
+    display: none;
+}
+
+.btn.open {
+    display: block !important;
+}
+
+.navbar {
+    padding: 0px 15px 0px 15px;
+}
+
+
+.navbar .container {
+    background-color: var(--light);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.modal-footer .btn {
+    outline: 0;
+    border: 0;
+}
+
+.modal-footer .btn-primary {
+    background-color: var(--green);
+}
+
+/* end header */
+
+
+/* sections */
+
+/* start hero */
+
+.title {
+    font-family: "Bebas Neue";
+    font-weight: bold;
+    color: var(--gray);
+    text-transform: uppercase;
+}
+
+.hero__title h1 {
+    margin-bottom: 10px;
+    line-height: normal;
+}
+
+.hero .btn {
+    background-color: #03A081;
+    color: var(--light);
+    border-top-left-radius: 47px;
+    border-bottom-left-radius: 47px;
+    border-bottom-right-radius: 47px;
+    width: 100%;
+    letter-spacing: 1.1px;
+    border: 0;
+}
+
+.btn:active {
+    transform: translateY(3px);
+}
+
+.hero .container {
+    padding-top: clamp(20px, 3vw, 30px);
+    position: relative;
+}
+
+
+
+.hero__text-top {
+    font-size: clamp(12px, 2vw, 18px);
+}
+
+
+
+.hero-text {
+    margin-bottom: 50px;
+}
+
+.hero__img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+
+.hero__container::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('./img/hero/hero-bg.png') no-repeat;
+    background-position: bottom center;
+    background-size: 100%;
+}
+
+.hero__wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.hero__message {
+    position: absolute;
+    top: 15%;
+}
+
+.hero__circle {
+    position: absolute;
+    top: 15%;
+    left: 67%;
+}
+
+.hero__vector {
+    position: absolute;
+    top: 5%;
+    left: 79%;
+}
+
+.hero__vector-color {
+    position: absolute;
+    top: 1%;
+    left: 89%;
+}
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.card-title {
+    line-height: normal;
+}
+
+@-webkit-keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.slideInRight {
+    -webkit-animation-name: slideInRight;
+    animation-name: slideInRight;
+    -webkit-animation-duration: 1.7s;
+    animation-duration: 1.7s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideInRight {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        visibility: visible;
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        -webkit-transform: translateX(100%);
+        transform: translateX(100%);
+        visibility: visible;
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* end hero */
+
+/* start about */
+
+.top {
+    margin-bottom: clamp(30px, 5vw, 60px);
+}
+
+.about .card-body {
+    padding: 30px 15px 30px 30px;
+}
+
+.about__card {
+    position: relative;
+}
+
+.about-subtitle {
+    color: #9f9f9f;
+}
+
+.card {
+    border: 0;
+
+}
+
+.about__card-content {
+    position: relative;
+    border-top-left-radius: 47px;
+    border-bottom-left-radius: 47px;
+    border-bottom-right-radius: 47px;
+}
+
+.about__card-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: calc(33% + 10px);
+    background-color: var(--green);
+    border-bottom-left-radius: 37px;
+}
+
+.about__card-content-img::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    background-repeat: no-repeat;
+}
+
+.about__card:nth-child(1) .about__card-content-img::after {
+    content: '';
+    background-image: url('./img/about/01.png');
+    width: 25px;
+    height: 30px;
+}
+
+.about__card:nth-child(2) .about__card-content-img::after {
+    content: '';
+    background-image: url('./img/about/02.png');
+    width: 25px;
+    height: 30px;
+}
+
+.about__card:nth-child(3) .about__card-content-img::after {
+    content: '';
+    background-image: url('./img/about/03.png');
+    width: 30px;
+    height: 24px;
+}
+
+.about__card:nth-child(4) .about__card-content-img::after {
+    content: '';
+    background-image: url('./img/about/04.png');
+    width: 30px;
+    height: 25px;
+}
+
+.about__card:nth-child(5) .about__card-content-img::after {
+    content: '';
+    background-image: url('./img/about/06.png');
+    width: 21px;
+    height: 30px;
+}
+
+.about__card:nth-child(6) .about__card-content-img::after {
+    content: '';
+    background-image: url('./img/about/05.png');
+    width: 30px;
+    height: 22px;
+}
+
+
+.about__card-img {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+}
+
+.about .card-title {
+    padding-right: 30px;
+}
+
+
+
+/* end about */
+
+/* start directions */
+ol {
+    counter-reset: number;
+}
+
+.directions__card {
+    border-radius: 20px;
+}
+
+.card-price {
+    display: inline-block;
+    font-size: 24px;
+    font-family: "Bebas Neue";
+}
+
+.directions__card {
+    position: relative;
+}
+
+
+.directions__card::after {
+    counter-increment: number;
+    content: counter(number);
+    position: absolute;
+    top: 5%;
+    right: 30px;
+    font-size: clamp(28px, 5vw, 40px);
+    color: var(--light);
+    transform: translateY(-5%);
+}
+
+/* end directions */
+
+/* Start carousel */
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 28px;
+    height: 28px;
+    background-size: 20px;
+    padding: 19px;
+}
+
+.carousel-control-prev-icon {
+    background-image: none;
+}
+
+.carousel-control-next-icon {
+    background-image: none;
+}
+
+.fa-arrow-left:before {
+    content: "\f060";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+}
+
+.fa-arrow-right:before {
+    content: "\f061";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 15px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: auto;
+}
+
+.carousel-border {
+    border: 1px solid var(--gray);
+    border-radius: 50px;
+    color: var(--gray);
+}
+
+.carousel-control-next:focus .carousel-border,
+.carousel-control-next:hover .carousel-border,
+.carousel-control-prev:focus .carousel-border,
+.carousel-control-prev:hover .carousel-border {
+    background-color: var(--green);
+    color: var(--light);
+    border: 0;
+}
+
+.carousel__date {
+    font-size: 12px;
+    color: #9f9f9f;
+}
+
+.carousel__title {
+    font-family: "Evolventa";
+    font-size: 16px;
+}
+
+.reviews .card-body {
+    border-radius: 0;
+    border-top-left-radius: 47px;
+    border-bottom-left-radius: 47px;
+    border-bottom-right-radius: 47px;
+}
+
+
+/* End carousel */
+
+/* start reviews */
+
+.btn-accordion {
+    background-color: transparent;
+    color: var(--gray);
+    border: 1px solid var(--gray);
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+.btn-accordion:hover {
+    color: var(--light);
+    background-color: var(--green);
+}
+
+.btn-accordion.active {
+    color: var(--light);
+    background-color: var(--green);
+    border: 0;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: transparent;
+    box-shadow: none;
+    color: var(--green);
+}
+
+.accordion-header button {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-family: "Bebas Neue";
+}
+
+.tab-content .accordion-item{
+    border: 0;
+    border-top-left-radius: 47px;
+    border-bottom-left-radius: 47px;
+}
+.tab-content .accordion-item:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.tab__card-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100%;
+    background-color: var(--green);
+    border-bottom-left-radius: 47px;
+    border-top-left-radius: 47px;
+    border-bottom-right-radius: 47px;
+
+}
+
+.accordion-button::after {
+    position: absolute;
+    z-index: 1;
+    background-image: url(./img/swiper/arrow-down.png);
+    background-size: auto;
+    width: 17px;
+    height: 23px;
+    right: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url('./img/swiper/arrow-down.png');
+}
+
+.accordion-button {
+    padding-right: 70px;
+}
+
+.form-control::placeholder {
+    color: var(--gray-text);
+    font-family: 'Evolventa';
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    left: 0;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+/* Стилизация контейнера для кастомного чекбокса */
+.checkbox-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* Создание кастомного чекбокса */
+.checkbox-container::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--gray);
+    border-radius: 3px;
+
+}
+
+/* Стилизация отмеченного кастомного чекбокса */
+.checkbox-container input:checked~.checkmark::after {
+    display: block;
+    opacity: 1;
+    overflow: visible;
+}
+
+/* Создание отмеченного кастомного чекбокса */
+.checkbox-container .checkmark::after {
+    content: "";
+    position: absolute;
+    transition: all 0.3s ease;
+    opacity: 0;
+    left: 7px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #333;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+
+/* Стилизация текста, связанного с кастомным чекбоксом */
+.checkbox-label {
+    margin-left: 8px;
+    line-height: normal;
+    color: var(--gray-text);
+}
+
+
+.form__container {
+    background-color: var(--light);
+    border-top-left-radius: 47px;
+    border-bottom-left-radius: 47px;
+    border-bottom-right-radius: 47px;
+}
+
+.form-textarea {
+    resize: none;
+}
+
+.form__title {
+    font-size: 24px;
+    font-family: "Bebas Neue";
+}
+
+.form__text {
+    color: var(--gray-text);
+}
+
+.form-control {
+    border: 0;
+    background-color: #F5F4F5;
+    border-radius: 30px;
+    padding: 15px;
+    font-size: 14px;
+}
+
+.btn-form {
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 33px;
+    letter-spacing: 1.2px;
+}
+
+/* end reviews */
+
+/* start map */
+
+.ymap,
+.ymaps-2-1-79-inner-panes {
+    border-radius: 60px;
+}
+
+.ymaps-2-1-79-balloon__content {
+    font-family: 'Evolventa';
+    font-size: 16px;
+    padding: 30px;
+}
+
+.text-marker {
+    color: var(--gray-text);
+}
+
+.ymaps-2-1-79-map {
+    background: transparent;
+}
+
+
+.marker-content {
+    position: relative;
+    width: 366px;
+    min-width: 255px;
+    text-align: left;
+    background-color: var(--light);
+    padding: 30px;
+    border-radius: 30px;
+    font-weight: normal;
+    font-family: 'Evolventa';
+}
+
+
+.marker-content::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -13px;
+    transform: translateY(-50%) rotate(45deg);
+    z-index: -1;
+    background-color: var(--light);
+    width: 60px;
+    height: 60px;
+}
+
+.text-marker,
+.marker-container .text {
+    font-size: 16px;
+}
+
+.marker-container .text {
+    text-decoration: none;
+}
+
+.ymaps-2-1-79-copyrights-pane {
+    display: none;
+}
+
+/* end map */
+
+/* Start Footer */
+
+.footer a,
+.footer span {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+/* End Footer */
+/* sections */
+
+
+/* media */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .hero__message {
+        left: 3%;
+    }
+
+    .hero__vector-color {
+        left: 87%;
+    }
+}
+
+@media (max-width:1200px) {
+    .card-title {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero__wrapper img {
+        display: none;
+    }
+
+    .btn {
+        font-size: 12px !important;
+    }
+
+    .tab-content .accordion-item:last-child {
+        margin-bottom: 20px;
+    }
+
+    .marker-container .text {
+        font-size: 12px;
+    }
+
+    .marker-container * img {
+        width: 18px;
+    }
+
+    .marker-content::after {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) rotate(45deg);
+    }
+}
+
+@media (max-width: 576px) {
+    .card-text {
+        font-size: 12px;
+    }
+
+    .display-2 {
+        font-size: calc(1rem + 2.9vw);
+    }
+
+    .marker-content {
+        width: 100%;
+        left: 53px;
+    }
+
+}

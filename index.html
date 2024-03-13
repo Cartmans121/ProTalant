@@ -1,0 +1,1228 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <title>ProTalant</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Main css -->
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container ps-3 pe-3 p-4 ps-xl-4 pe-xl-4">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/header/logo.png" alt="Logo Main" width="150">
+                </a>
+                <button class="navbar-toggler d-lg-none order-sm-1" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav w-100 mt-2 mt-lg-0 justify-content-evenly">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" aria-current="page">ПРЕИМУЩЕСТВА
+                                <span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Направления обучения</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Как записаться?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Отзывы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <button type="button" class="btn d-none d-sm-block phone btn-primary btn-lg" data-bs-toggle="modal"
+                    data-bs-target="#modalId">
+                    Заказать звонок
+                </button>
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__title">
+                    <h1 class="title display-2">
+                        более 5000 курсов повышения квалификации по различным профессиям и направлениям
+                    </h1>
+                </div>
+                <div class="hero-text row justify-content-between">
+                    <div class="col-md-7">
+                        <p class="text hero__text-top">
+                            Профессиональное обучение по рабочим специальностям, курсам переподготовки и повышения
+                            квалификации. Выбери курс и начни свой путь к профессиональному росту прямо сейчас!
+                        </p>
+
+                    </div>
+                    <div class="col-md-5 text-center">
+                        <button class="btn btn-big text fw-bold pt-3 pb-3 pt-sm-4 pb-sm-4">ВЫБРАТЬ ОБУЧАЮЩИЙ
+                            КУРС</button>
+                    </div>
+                </div>
+                <div class="hero__img fadeIn">
+                    <picture>
+                        <source srcset="./img/hero/hero-img-mobile.png" media="(max-width:991px)" />
+                        <img src="./img/hero/hero-img.png" class="img-fluid" alt="Hero-Image" />
+                    </picture>
+                    <div class="hero__wrapper">
+                        <img class="hero__message fadeInLeft" width="221" src="./img/hero/message.png" alt="message">
+                        <img class="hero__circle" id="draggable-circle" src="./img/hero/circle.png" alt="circle">
+                        <img class="hero__vector" src="./img/hero/vector.png" alt="vector">
+                        <img class="hero__vector-color slideInRight" src="./img/hero/vecotr-color.png"
+                            alt="vector-color">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about pt-lg-5 pt-3 pb-lg-5 pb-3">
+            <div class="container about__container">
+                <div class="row justify-content-center align-items-center g-2 top">
+                    <div class="col-lg-2">
+                        <p class="fs-6 text-center text-lg-start about-subtitle m-0 card-text">
+                            Наши преимущества для вашего успешного обучения
+                        </p>
+                    </div>
+                    <div class="col-lg-10 text-center">
+                        <h2 class="display-3 text-uppercase fw-bold title">
+                            Почему стоит учиться у нас?
+                        </h2>
+                    </div>
+                </div>
+                <ul class="row m-0 p-0">
+                    <div
+                        class="col-lg-6 ps-0 pb-3 about__card d-flex flex-column justify-content-xl-between justify-content-evenly">
+                        <div class="about__img">
+                            <img src="./img/about/about-start.png" alt="about-image" loading="lazy">
+                        </div>
+                        <div class="card text-start about__card-content">
+                            <img class="about__card-img" src="./img/about/exp-img.png" loading="lazy" width="30"
+                                alt="Ico-card" />
+                            <div class="card-body pt-5 pb-5">
+                                <h4 class="card-title text-uppercase mb-sm-3 mb-2">Опытные преподаватели</h4>
+                                <p class="card-text">Наши преподаватели имеют богатый опыт работы в своих областях и
+                                    готовы передать свои знания и навыки нашим клиентам. Вы получите качественное
+                                    образование под руководством опытных специалистов</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 pe-0 ps-lg-2 ps-0">
+                        <ul class="row m-0 p-0">
+                            <li class="col-sm-6 pb-3 about__card p-0 p-sm-2">
+                                <div class="card text-start about__card-content about__card-content-img">
+                                    <div class="card-body">
+                                        <h4 class="card-title text-uppercase mb-sm-3 mb-2">Работаем<br>на результат</h4>
+                                        <p class="card-text">Мы уверены в качестве наших услуг и готовы доказать это
+                                            своим клиентам, не требуя предварительной оплаты</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-6 pb-3 about__card p-0 p-sm-2">
+                                <div class="card text-start about__card-content about__card-content-img">
+                                    <div class="card-body">
+                                        <h4 class="card-title text-uppercase mb-sm-3 mb-2">Наличие <br> лиценции</h4>
+                                        <p class="card-text">Наши специалисты имеют все необходимые лицензии и
+                                            сертификаты, подтверждающие ихпрофессионализм</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-6 pb-3 about__card p-0 p-sm-2">
+                                <div class="card text-start about__card-content about__card-content-img">
+                                    <div class="card-body">
+                                        <h4 class="card-title text-uppercase mb-sm-3 mb-2">Широкий спектр <br>Услуг</h4>
+                                        <p class="card-text">Начиная от курсов повышения квалификации до
+                                            профессиональной переподготовки</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-6 pb-3 about__card p-0 p-sm-2">
+                                <div class="card text-start about__card-content about__card-content-img">
+                                    <div class="card-body">
+                                        <h4 class="card-title text-uppercase mb-sm-3 mb-2">Регистрация <br> в ФИС ФРДО4
+                                        </h4>
+                                        <p class="card-text">Мы следуем всем необходимым законодательным требованиям и
+                                            зарегистрированы в ФИС ФРДО4</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-6 pb-3 about__card p-0 p-sm-2">
+                                <div class="card text-start about__card-content about__card-content-img">
+                                    <div class="card-body">
+                                        <h4 class="card-title text-uppercase mb-sm-3 mb-2">Приведи друга <br>- получи
+                                            скидку
+                                        </h4>
+                                        <p class="card-text">Мы ценим рекомендации наших клиентов. Пригласите друга и
+                                            получите скидку на наши услуги</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-6 pb-3 about__card p-0 p-sm-2">
+                                <div class="card text-start about__card-content about__card-content-img">
+                                    <div class="card-body">
+                                        <h4 class="card-title text-uppercase mb-sm-3 mb-2">Документы <br>гос. образца
+                                        </h4>
+                                        <p class="card-text">Все выдаваемые нами документы соответствуют государственным
+                                            стандартам и имеют юридическую силу</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </section>
+        <section class="directions pt-lg-5 pt-3 pb-lg-5 pb-3">
+            <div class="container directions__container">
+                <div class="row justify-content-center align-items-center g-2 top">
+                    <div class="col-lg-2">
+                        <p class="fs-6 text-center text-lg-start about-subtitle">
+                            Широкий спектр курсов и программ обучения для каждого
+                        </p>
+                    </div>
+                    <div class="col-lg-10 text-center">
+                        <h2 class="display-3 text-uppercase fw-bold title">
+                            НАПРАВЛЕНИЯ ОБУЧЕНИЯ
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 pt-2 pb-2 p-lg-2">
+                        <div class="card text-start directions__card">
+                            <div class="card-body ps-lg-4 pe-lg-4">
+                                <h4 class="card-title m-0 pb-2 border-bottom d-inline-block">Рабочие специальности</h4>
+                                <p class="card-text m-0 mt-3 mb-3">Обучение для должностей, которые предполагают
+                                    применение
+                                    физического труда и специальных навыков</p>
+                                <div class="card-price mb-3">от 5 700₽</div>
+                                <div class="d-grid gap-2">
+                                    <button type="button" class="btn fs-6 fw-bold">
+                                        Записаться
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pt-2 pb-2 p-lg-2">
+                        <div class="card text-start directions__card">
+                            <div class="card-body ps-lg-4 pe-lg-4">
+                                <h4 class="card-title m-0 pb-2 border-bottom d-inline-block">Повышение квалификации</h4>
+                                <p class="card-text m-0 mt-3 mb-3">Профессиональное обучение работников предприятия,
+                                    проводится с целью повышения уровня теоретических знаний</p>
+                                <div class="card-price mb-3">4 700₽</div>
+                                <div class="d-grid gap-2">
+                                    <button type="button" class="btn fs-6 fw-bold">
+                                        Записаться
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 pt-2 pb-2 p-lg-2">
+                        <div class="card text-start directions__card">
+                            <div class="card-body ps-lg-4 pe-lg-4">
+                                <h4 class="card-title m-0 pb-2 border-bottom d-inline-block">Проф. Переподготовка</h4>
+                                <p class="card-text m-0 mt-3 mb-3">Дополнительное проф. образование, позволяет
+                                    специалисту сменить свою профессию или специальность</p>
+                                <div class="card-price mb-3">16 000₽</div>
+                                <div class="d-grid gap-2">
+                                    <button type="button" class="btn fs-6 fw-bold">
+                                        Записаться
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pt-2 pb-2 p-lg-2">
+                        <div class="card text-start directions__card">
+                            <div class="card-body ps-lg-4 pe-lg-4">
+                                <h4 class="card-title m-0 pb-2 border-bottom d-inline-block">охрана труда</h4>
+                                <p class="card-text m-0 mt-3 mb-3">Обучение для работников, которые отвечают за
+                                    предотвращение различных несчастных случаев</p>
+                                <div class="card-price mb-3">3 800₽</div>
+                                <div class="d-grid gap-2">
+                                    <button type="button" class="btn fs-6 fw-bold">
+                                        Записаться
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pt-2 pb-2 p-lg-2">
+                        <div class="card text-start directions__card">
+                            <div class="card-body ps-lg-4 pe-lg-4">
+                                <h4 class="card-title m-0 pb-2 border-bottom d-inline-block">Аттестация</h4>
+                                <p class="card-text m-0 mt-3 mb-3">Аттестация специалистов подразумевает процедуру
+                                    проверки знаний и навыков персонала</p>
+                                <div class="card-price mb-3">17 000₽</div>
+                                <div class="d-grid gap-2">
+                                    <button type="button" class="btn fs-6 fw-bold">
+                                        Записаться
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl col-lg-3 pt-2 pb-2 p-lg-2">
+                        <div class="card text-start directions__card">
+                            <div class="card-body ps-lg-4 pe-lg-4">
+                                <h4 class="card-title m-0 pb-2 border-bottom d-inline-block">Пожарная опасность</h4>
+                                <p class="card-text m-0 mt-3 mb-3">Профессиональное обучение работников предприятия,
+                                    проводится с целью повышения уровня теоретических знаний</p>
+                                <div class="card-price mb-3">5 000₽</div>
+                                <div class="d-grid gap-2">
+                                    <button type="button" class="btn fs-6 fw-bold">
+                                        Записаться
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pt-2 pb-2 p-lg-2">
+                        <div class="card text-start directions__card">
+                            <div class="card-body ps-lg-4 pe-lg-4">
+                                <h4 class="card-title m-0 pb-2 border-bottom d-inline-block">Курсы Целевого назначения
+                                </h4>
+                                <p class="card-text m-0 mt-3 mb-3">Подготовка по программе направлена на повышение
+                                    квалификации в области пожарной безопасности</p>
+                                <div class="card-price mb-3">4 700₽</div>
+                                <div class="d-grid gap-2">
+                                    <button type="button" class="btn fs-6 fw-bold">
+                                        Записаться
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 pt-2 pb-2 p-lg-2">
+                        <div class="card text-start directions__card">
+                            <div class="card-body ps-lg-4 pe-lg-4">
+                                <h4 class="card-title m-0 pb-2 border-bottom d-inline-block">Независимая оценка</h4>
+                                <p class="card-text m-0 mt-3 mb-3">Процедура подтверждения соответствия квалификации
+                                    соискателя положениям профессионального стандарта</p>
+                                <div class="card-price mb-3">10 000₽</div>
+                                <div class="d-grid gap-2">
+                                    <button type="button" class="btn fs-6 fw-bold">
+                                        Записаться
+                                    </button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="training pt-lg-5 pt-3 pb-lg-5 pb-3">
+            <div class="container training__container">
+                <div class="row justify-content-center align-items-center g-2 top">
+                    <div class="col-lg-3">
+                        <p class="fs-6 text-center text-lg-start about-subtitle">
+                            Запишись на обучение всего в несколько шагов прямо сейчас
+                        </p>
+                    </div>
+                    <div class="col-lg-9 text-center">
+                        <h2 class="display-3 text-uppercase fw-bold title">
+                            КАК записаться на обучение?
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div
+                        class="col-lg-6 pb-3 about__card d-flex flex-column justify-content-xl-between justify-content-evenly">
+                        <div class="about__img">
+                            <img src="./img/training/bg-img.png" alt="about-image" loading="lazy">
+                        </div>
+                        <button type="button" class="btn btn-big pt-3 pb-3 pt-sm-4 pb-sm-4 fw-bold">
+                            ОСТАВИТЬ ЗАЯВКУ НА ОБУЧЕНИЕ
+                        </button>
+
+                    </div>
+                    <div class="col-lg-6">
+                        <ol class="row mb-0 p-0">
+                            <li class="col-sm-6 pb-3 directions__card">
+                                <div class="card text-start about__card-content">
+                                    <div class="card-body ">
+                                        <h4 class="card-title text-uppercase mb-3 pe-1">Оставьте <br> заявку</h4>
+                                        <p class="card-text">Оставьте заявку, указав свои контактные данные и область, в
+                                            которой он хочет повысить свою квалификацию</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-6 pb-3 directions__card">
+                                <div class="card text-start about__card-content">
+                                    <div class="card-body ">
+                                        <h4 class="card-title text-uppercase mb-3 pe-1">Информирование <br> обучающегося
+                                        </h4>
+                                        <p class="card-text">Вы получите информацию о расписании занятий,
+                                            преподавателях, а также о текущих акциях и скидках</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-6 pb-3 directions__card">
+                                <div class="card text-start about__card-content">
+                                    <div class="card-body ">
+                                        <h4 class="card-title text-uppercase mb-3 pe-1">Обработка <br> Заказа</h4>
+                                        <p class="card-text pe-xl-3">После обработки заказа мы сообщим информацию о
+                                            доступе к выбранному курсу</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-6 pb-3 directions__card">
+                                <div class="card text-start about__card-content">
+                                    <div class="card-body ">
+                                        <h4 class="card-title text-uppercase mb-3 pe-1">Проверка <br> документов</h4>
+                                        <p class="card-text">Будут предоставлены все необходимые документы в электронном
+                                            виде: договор об обучении, счет на оплату</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-6 pb-3 directions__card">
+                                <div class="card text-start about__card-content">
+                                    <div class="card-body ">
+                                        <h4 class="card-title text-uppercase mb-3 pe-1">оплата <br> обучения
+                                        </h4>
+                                        <p class="card-text">После получения всех документов пользователь может
+                                            произвести оплату выбранного курса обучения</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="col-sm-6 pb-3 directions__card">
+                                <div class="card text-start about__card-content">
+                                    <div class="card-body ">
+                                        <h4 class="card-title text-uppercase mb-3 pe-1">Начало <br>обучения</h4>
+                                        <p class="card-text">Покупка будет завершена, и пользователь сможет начать
+                                            обучение по выбранной программе</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ol>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="reviews pt-lg-5 pt-3 pb-lg-5 pb-3">
+            <div class="container reviews__container">
+                <div class="row justify-content-center align-items-center g-2 top">
+                    <div class="col-lg-3">
+                        <p class="fs-6 text-center text-lg-start about-subtitle">
+                            Нам важно ваше мнение - оставляйте отзывы и пожелания!
+                        </p>
+                    </div>
+                    <div class="col-lg-8 text-center">
+                        <h2 class="display-3 text-uppercase fw-bold title">
+                            Отзывы о нашем центре
+                        </h2>
+                    </div>
+                    <div class="col-lg-1 text-center position-relative">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon carousel-border" aria-hidden="true"><i
+                                    class="fa-solid fa-arrow-left"></i></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselId"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon carousel-border" aria-hidden="true"><i
+                                    class="fa-solid fa-arrow-right"></i></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+
+                </div>
+
+                <div id="carouselId" class="carousel slide" data-bs-ride="false" data-bs-touch="false"
+                    data-bs-wrap="false">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="row ps-2 pe-2">
+                                <div class="col-lg-6">
+                                    <div class="card mb-3 card-body">
+                                        <div class="row g-0 mb-3">
+                                            <div class="col-md-10">
+                                                <h5 class="carousel__title card-title m-0">
+                                                    Алексей Смирнов
+                                                </h5>
+                                                <span class="carousel__date">14.01.2024</span>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <img src="./img/swiper/stars.png" alt="Stars-Reviews">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="m-0 p-0 carousel__text card-text">
+                                                Я очень благодарен центру повышения квалификации и переподготовки за
+                                                профессиональный подход к обучению. Программа была структурированной и
+                                                интересной, преподаватели проявили высокий уровень знаний и
+                                                педагогического мастерства. Полученные знания и навыки помогли мне
+                                                успешно развивать свою карьеру
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="card mb-3 card-body">
+                                        <div class="row g-0 mb-3">
+                                            <div class="col-md-10">
+                                                <h5 class="carousel__title card-title m-0">
+                                                    Людмила Прокофьева
+                                                </h5>
+                                                <span class="carousel__date">17.01.2024</span>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <img src="./img/swiper/stars.png" alt="Stars-Reviews">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="m-0 p-0 carousel__text card-text">
+                                                Обучение в центре превзошло все мои ожидания. Программа была актуальной,
+                                                а преподаватели действительно профессионалы своего дела. Я получила не
+                                                только новые знания, но и уверенность в своих силах. Рекомендую этот
+                                                центр всем, кто стремится к профессиональному росту
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row ps-2 pe-2">
+                                <div class="col-lg-6">
+                                    <div class="card mb-3 card-body">
+                                        <div class="row g-0 mb-3">
+                                            <div class="col-md-10">
+                                                <h5 class="carousel__title card-title m-0">
+                                                    Ольга Юрьева
+                                                </h5>
+                                                <span class="carousel__date">05.02.2024</span>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <img src="./img/swiper/stars.png" alt="Stars-Reviews">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="m-0 p-0 carousel__text card-text">
+                                                Я прошла курс по повышению квалификации в вашем центре и хочу выразить
+                                                свою благодарность. Все занятия были интересными, насыщенными и
+                                                полезными. Преподаватели уделили нам много времени и внимания, помогали
+                                                разобраться в сложных вопросах. Я рекомендую ваш центр своим коллегам и
+                                                друзьям. Спасибо за ваш труд!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="card mb-3 card-body">
+                                        <div class="row g-0 mb-3">
+                                            <div class="col-md-10">
+                                                <h5 class="carousel__title card-title m-0">
+                                                    Игорь Анисимов
+                                                </h5>
+                                                <span class="carousel__date">06.02.2024</span>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <img src="./img/swiper/stars.png" alt="Stars-Reviews">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="m-0 p-0 carousel__text card-text">
+                                                Прошел курсы по переподготовке в вашем центре. Хочу отметить высокий
+                                                уровень организации и профессионализм преподавателей. Мне удалось не
+                                                только обновить свои знания, но и узнать много нового. Процесс обучения
+                                                был интересным. Благодарю всех сотрудников центра за помощь и поддержку
+                                                на протяжении всего процесса обучения
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row ps-2 pe-2">
+                                <div class="col-lg-6">
+                                    <div class="card mb-3 card-body">
+                                        <div class="row g-0 mb-3">
+                                            <div class="col-md-10">
+                                                <h5 class="carousel__title card-title m-0">
+                                                    Алексей Смирнов
+                                                </h5>
+                                                <span class="carousel__date">14.01.2024</span>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <img src="./img/swiper/stars.png" alt="Stars-Reviews">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="m-0 p-0 carousel__text card-text">
+                                                Я очень благодарен центру повышения квалификации и переподготовки за
+                                                профессиональный подход к обучению. Программа была структурированной и
+                                                интересной, преподаватели проявили высокий уровень знаний и
+                                                педагогического мастерства. Полученные знания и навыки помогли мне
+                                                успешно развивать свою карьеру
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="card mb-3 card-body">
+                                        <div class="row g-0 mb-3">
+                                            <div class="col-md-10">
+                                                <h5 class="carousel__title card-title m-0">
+                                                    Людмила Прокофьева
+                                                </h5>
+                                                <span class="carousel__date">17.01.2024</span>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <img src="./img/swiper/stars.png" alt="Stars-Reviews">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="m-0 p-0 carousel__text card-text">
+                                                Обучение в центре превзошло все мои ожидания. Программа была актуальной,
+                                                а преподаватели действительно профессионалы своего дела. Я получила не
+                                                только новые знания, но и уверенность в своих силах. Рекомендую этот
+                                                центр всем, кто стремится к профессиональному росту
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </section>
+        <section class="accordion pt-lg-5 pt-3 pb-lg-5 pb-3">
+            <div class="container accordion__container">
+                <div class="row justify-content-center align-items-center g-2 top">
+                    <div class="col-lg-3">
+                        <p class="fs-6 text-center text-lg-start about-subtitle">
+                            Все популярные и важные вопросы в одном месте
+                        </p>
+                    </div>
+                    <div class="col-lg-9 text-center">
+                        <h2 class="display-3 text-uppercase fw-bold title m-0">
+                            часто задаваемые вопросы
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 ps-0 pe-0 pe-lg-2">
+
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs mb-5 border-0 row" id="myTab" role="tablist">
+                                <li class="col-lg-3 pb-2 nav-item" role="presentation">
+                                    <button class="btn-accordion text-uppercase active p-3 w-100" id="home-tab"
+                                        data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab"
+                                        aria-controls="home" aria-selected="true">
+                                        ОБЩИЕ ВОПРОСЫ
+                                    </button>
+                                </li>
+                                <li class="col-lg-5 pb-2 nav-item ps-3" role="presentation">
+                                    <button class="btn-accordion text-uppercase p-3 w-100" id="profile-tab"
+                                        data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab"
+                                        aria-controls="profile" aria-selected="false">
+                                        Доставка и оплата
+                                    </button>
+                                </li>
+                                <li class="col-lg-4 nav-item ps-3" role="presentation">
+                                    <button class="btn-accordion text-uppercase p-3 w-100" id="messages-tab"
+                                        data-bs-toggle="tab" data-bs-target="#messages" type="button" role="tab"
+                                        aria-controls="messages" aria-selected="false">
+                                        Акции и сотрудничество
+                                    </button>
+                                </li>
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="accordion" id="accordionExample">
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingOne">
+                                                <button
+                                                    class="accordion-button m-0 collapsed text-uppercase tab__card-content position-relative"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                    aria-controls="collapseOne">
+                                                    Что означает ДПО (Дополнительное профессиональное образование)?
+                                                </button>
+                                            </h4>
+                                            <div id="collapseOne" class="accordion-collapse collapse"
+                                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <p class="text accordion-text m-0 p-0">
+
+                                                        Расшифровка ДПО: Дополнительное профессиональное образование.
+                                                        Дополнительное образование включает курсы повышения
+                                                        квалификации,
+                                                        курсы переподготовки и образовательные семинары. По первым двум
+                                                        видам выделяют две ступени образования. ДПО охватывает обучение
+                                                        специалистов в горизонтальной плоскости: внутри имеющейся
+                                                        ступени.
+                                                        Это означает, что курсы ДПО не позволяют повысить свой уровень
+                                                        образования. Например, имея среднее профессиональное образование
+                                                        невозможно получить высшее с помощью курсов переподготовки и
+                                                        повышения квалификации. Еще один пример, имея только среднюю
+                                                        школу,
+                                                        невозможно получить профессиональное образование с помощью
+                                                        курсов
+                                                        переподготовки. Однако, курсы переподготовки позволяют студентам
+                                                        со
+                                                        средним профессиональным или высшим образованием сменить
+                                                        профессию
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingTwo">
+                                                <button
+                                                    class="accordion-button m-0 collapsed text-uppercase tab__card-content position-relative"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseTwo" aria-expanded="false"
+                                                    aria-controls="collapseTwo">
+                                                    Как проходит обучение в ВАшем центре?
+                                                </button>
+                                            </h4>
+                                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                                aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <p class="text accordion-text m-0 p-0">
+
+                                                        Наша компания отправляет Вам все необходимые документы для
+                                                        заполнения формы на электронный адрес или в WhatsApp. Вам нужно
+                                                        заполнить заявку и отправить ответ. Далее менеджер передает
+                                                        заполненную заявку в отдел делопроизводства. В день оплаты, мы
+                                                        отправляем Вам скан-копии документов. Оригиналы документов мы
+                                                        отправляем Почтой России заказными письмами на ваш адрес, либо
+                                                        курьерской доставкой за Ваш счет.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingThree">
+                                                <button
+                                                    class="accordion-button m-0 collapsed text-uppercase tab__card-content position-relative"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseThree" aria-expanded="false"
+                                                    aria-controls="collapseThree">
+                                                    Предоставляем ли мы трудоустройство?
+                                                </button>
+                                            </h4>
+                                            <div id="collapseThree" class="accordion-collapse collapse"
+                                                aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <p class="text accordion-text m-0 p-0">
+
+                                                        В данный момент такой услуги нет.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingFourth">
+                                                <button
+                                                    class="accordion-button m-0 collapsed text-uppercase tab__card-content position-relative"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseFourth" aria-expanded="false"
+                                                    aria-controls="collapseFourth">
+                                                    Какие документы нужны для поступления?
+                                                </button>
+                                            </h4>
+                                            <div id="collapseFourth" class="accordion-collapse collapse"
+                                                aria-labelledby="headingFourth" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <p class="text accordion-text m-0 p-0">
+
+                                                        Для заключения договора на обучение необходимо предоставить: 1.
+                                                        Скан
+                                                        паспорта; 2. Скан диплома об образовании; 3. Заполненную заявку
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingFive">
+                                                <button
+                                                    class="accordion-button m-0 collapsed text-uppercase tab__card-content position-relative"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseFive" aria-expanded="false"
+                                                    aria-controls="collapseFive">
+                                                    Учебный центр выдает диплом государственного образца?
+                                                </button>
+                                            </h4>
+                                            <div id="collapseFive" class="accordion-collapse collapse"
+                                                aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <p class="text accordion-text m-0 p-0">
+
+                                                        Согласно письму Минобрнауки России от 12.03.2015 N АК-610/06 "О
+                                                        направлении методических рекомендаций" (вместе с "Методическими
+                                                        рекомендациями по разработке, порядку выдачи и учету документов
+                                                        о
+                                                        квалификации в сфере дополнительного профессионального
+                                                        образования")
+                                                        дипломы государственного образца упразднены. Образовательные
+                                                        учреждения дополнительного профессионального образования выдают
+                                                        дипломы установленного образца. Все наши дипломы выписываются на
+                                                        бланках строгой отчетности. Они имеют несколько степеней защиты.
+                                                        Все
+                                                        дипломы и удостоверения регистрируются в специальных журналах и
+                                                        подаются в Рособрнадзор.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <div class="accordion">
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingSix">
+                                                <button
+                                                    class="accordion-button m-0 collapsed text-uppercase tab__card-content position-relative"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseSix" aria-expanded="true"
+                                                    aria-controls="collapseSix">
+                                                    Как получить документы в другом городе?
+                                                </button>
+                                            </h4>
+                                            <div id="collapseSix" class="accordion-collapse collapse"
+                                                aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <p class="text accordion-text m-0 p-0">
+
+                                                        После прохождения курса обучения, мы направим вам документы
+                                                        любым
+                                                        удобным для Вас способом.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingSeven">
+                                                <button
+                                                    class="accordion-button m-0 collapsed text-uppercase tab__card-content position-relative"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseSeven" aria-expanded="false"
+                                                    aria-controls="collapseSeven">
+                                                    Способы доставки
+                                                </button>
+                                            </h4>
+                                            <div id="collapseSeven" class="accordion-collapse collapse"
+                                                aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <p class="text accordion-text m-0 p-0">
+
+                                                        Вы можете получить документы любым удобным для вас способом:
+                                                        <br> •
+                                                        Доставкой удобной для вас транспортной компанией. <br> • Забрать
+                                                        из
+                                                        нашего офиса в г. Краснодар <br> • Доставкой курьером • Заказным
+                                                        письмом почты России
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingEight">
+                                                <button
+                                                    class="accordion-button m-0 collapsed text-uppercase tab__card-content position-relative"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseEight" aria-expanded="false"
+                                                    aria-controls="collapseEight">
+                                                    Способы оплаты
+                                                </button>
+                                            </h4>
+                                            <div id="collapseEight" class="accordion-collapse collapse"
+                                                aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <p class="text accordion-text m-0 p-0">
+
+                                                        В настоящее время мы принимаем оплату за обучение по самым
+                                                        разным
+                                                        схемам.
+                                                        <br>
+                                                        • Через сайт Банковской картой <br>
+                                                        • Через отделение банка. <br>
+                                                        • Со счета вашей компании - если вы обучаетесь по направлению
+                                                        организации и она оплачивает ваше обучение. <br>
+                                                        • Оплата наличными в том учебном комплексе, где будут проходить
+                                                        ваши
+                                                        занятия.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingNine">
+                                                <button
+                                                    class="accordion-button m-0 collapsed text-uppercase tab__card-content position-relative"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseNine" aria-expanded="false"
+                                                    aria-controls="collapseNine">
+                                                    Гарантии после оплаты
+                                                </button>
+                                            </h4>
+                                            <div id="collapseNine" class="accordion-collapse collapse"
+                                                aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <p class="text accordion-text m-0 p-0">
+
+                                                        Учебный центр имеет лицензию и работает уже много лет. Мы
+                                                        заключаем
+                                                        договор на обучение с каждым слушателем. В договоре прописаны
+                                                        обязанности и права сторон. Учебный центр выполняет свои
+                                                        обязательства по договору полностью, что подтверждают отзывы от
+                                                        физических лиц и крупных компаний.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingTen">
+                                                <button
+                                                    class="accordion-button m-0 collapsed text-uppercase tab__card-content position-relative"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseTen" aria-expanded="false"
+                                                    aria-controls="collapseTen">
+                                                    Возврат средств
+                                                </button>
+                                            </h4>
+                                            <div id="collapseTen" class="accordion-collapse collapse"
+                                                aria-labelledby="headingTen" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <p class="text accordion-text m-0 p-0">
+
+                                                        При необходимости возврата денег, возврат переведенных средств
+                                                        производится на ваш банковский счет в течение 5—30 рабочих дней
+                                                        (срок зависит от вашего банка)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+                                    <div class="accordion">
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingElleven">
+                                                <button
+                                                    class="accordion-button m-0 collapsed text-uppercase tab__card-content position-relative"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseElleven" aria-expanded="true"
+                                                    aria-controls="collapseElleven">
+                                                    Бывают ли у вас скидки?
+                                                </button>
+                                            </h4>
+                                            <div id="collapseElleven" class="accordion-collapse collapse"
+                                                aria-labelledby="headingElleven" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <p class="text accordion-text m-0 p-0">
+
+                                                        Наш учебный центр регулярно проводит акции и другие меры для
+                                                        повышения лояльности клиентов
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingTwelve">
+                                                <button
+                                                    class="accordion-button m-0 collapsed text-uppercase tab__card-content position-relative"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseTwelve" aria-expanded="false"
+                                                    aria-controls="collapseTwelve">
+                                                    Как я могу узнать о скидках и акциях?
+                                                </button>
+                                            </h4>
+                                            <div id="collapseTwelve" class="accordion-collapse collapse"
+                                                aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <p class="text accordion-text m-0 p-0">
+
+                                                        Об акциях и других мерах лояльности можно узнать у менеджера по
+                                                        работе с клиентами (его контакты есть на нашем сайте
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingThriteen">
+                                                <button
+                                                    class="accordion-button m-0 collapsed text-uppercase tab__card-content position-relative"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseThriteen" aria-expanded="false"
+                                                    aria-controls="collapseThriteen">
+                                                    Как стать партнером?
+                                                </button>
+                                            </h4>
+                                            <div id="collapseThriteen" class="accordion-collapse collapse"
+                                                aria-labelledby="headingThriteen" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <p class="text accordion-text m-0 p-0">
+
+                                                        Оставьте заявку в наши мессенджеры, расскажите о вашей
+                                                        деятельности
+                                                        и ваше предложение
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingFourteen">
+                                                <button
+                                                    class="accordion-button m-0 collapsed text-uppercase tab__card-content position-relative"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseFourteen" aria-expanded="false"
+                                                    aria-controls="collapseFourteen">
+                                                    Какие есть способы сотрудничества?
+                                                </button>
+                                            </h4>
+                                            <div id="collapseFourteen" class="accordion-collapse collapse"
+                                                aria-labelledby="headingFourteen" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <p class="text accordion-text m-0 p-0">
+
+                                                        1. При наличии сайта или другого онлайн-ресурса вы можете
+                                                        присоединиться к нашей партнерской программе и получать
+                                                        вознаграждение за каждого приведенного клиента. <br>
+                                                        2. Агентское вознаграждение в размере 10% за каждую сделку, если
+                                                        вы
+                                                        предложите наши услуги друзьям и знакомым или будете
+                                                        самостоятельно
+                                                        искать клиентов. <br>
+                                                        3. Мы предлагаем выгодные скидки на обучение для корпоративных
+                                                        клиентов, которые осуществляют образовательную деятельность, но
+                                                        не
+                                                        имеют лицензии. Для розничных клиентов цена на курс составляет
+                                                        80%
+                                                        от цены для розничных клиентов
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item">
+                                            <h4 class="accordion-header" id="headingFifteen">
+                                                <button
+                                                    class="accordion-button m-0 collapsed text-uppercase tab__card-content position-relative"
+                                                    type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseFifteen" aria-expanded="false"
+                                                    aria-controls="collapseFifteen">
+                                                    Возврат средств
+                                                </button>
+                                            </h4>
+                                            <div id="collapseFifteen" class="accordion-collapse collapse"
+                                                aria-labelledby="headingFifteen" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <p class="text accordion-text m-0 p-0">
+
+                                                        При необходимости возврата денег, возврат переведенных средств
+                                                        производится на ваш банковский счет в течение 5—30 рабочих дней
+                                                        (срок зависит от вашего банка)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-4 pe-0 ps-0 ps-lg-2">
+                            <div
+                                class="form__container p-4 p-xl-5 pe-4 h-100 d-flex flex-column justify-content-center">
+                                <div class="form__header mb-4">
+                                    <h6 class="form__title mb-2 m-0 text-uppercase">
+                                        Остались вопросы?
+                                    </h6>
+                                    <p class="form__text m-0">
+                                        Оставьте свой вопрос и мы ответим вам как можно быстрее
+                                    </p>
+                                </div>
+                                <form class="form">
+                                    <div class="mb-3">
+                                        <input class="form-control form-textarea" name="text" id="message" rows="3"
+                                            placeholder="Ваш вопрос" />
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" name="inputName" id="inputName"
+                                            placeholder="Ваше имя" />
+                                    </div>
+                                    <div class="mb-4">
+                                        <input type="text" class="form-control" name="Phone" id="inputPhone"
+                                            placeholder="Ваш телефон" />
+                                    </div>
+                                    <div class="mb-3 w-100">
+                                        <button type="submit" class="btn btn-form w-100">
+                                            ОТПРАВИТЬ ЗАЯВКУ
+                                        </button>
+                                    </div>
+                                    <fieldset class="mb-0">
+                                        <div class="checkbox-container">
+                                            <input type="checkbox" id="checkbox" required>
+                                            <span class="checkmark"></span>
+                                            <label class="checkbox-label" for="checkbox">
+                                                Нажимая на кнопку, вы принимаете условия политики конфиденциальности
+                                            </label>
+                                            <div class="invalid-feedback">Необходимо согласиться с условиями обработки
+                                                данных</div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <section class="map pt-lg-5 pt-3 pb-lg-5 pb-3">
+            <div class="container map__container">
+                <div class="row justify-content-center align-items-center g-2 top">
+                    <div class="col-lg-3">
+                        <p class="fs-6 text-center text-lg-start about-subtitle">
+                            Свяжитесь с нами для уточнения любого вопросы
+                        </p>
+                    </div>
+                    <div class="col-lg-9 text-center">
+                        <h2 class="display-3 text-uppercase fw-bold title">
+                            Контактные ДАННЫЕ для связи
+                        </h2>
+                    </div>
+                </div>
+                <div id="ymap" class="ymap w-100 bg-secondary-subtle" style="height: 580px;">
+                </div>
+            </div>
+        </section>
+        <!-- modal -->
+        <div class="modal fade" id="modalId" tabindex="-1" role="dialog" aria-labelledby="modalTitleId"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitleId">
+                            Введите ваш номер телефона
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="mb-3">
+                            <label for="" class="form-label">Телефон</label>
+                            <input type="tel" class="form-control" name="" id="" aria-describedby="emailHelpId"
+                                placeholder="+7" />
+                            <small id="emailHelpId" class="form-text text-muted">Звонок бесплатный</small>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            Закрыть
+                        </button>
+                        <button type="submit" class="btn btn-primary">
+                            Отправить
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container pt-lg-5 pt-3 pb-lg-5 pb-3">
+            <ul
+                class="d-flex flex-column flex-md-row gap-2 mt-2 flex-sm-row flex-column justify-content-evenly ps-0 border-bottom pb-2 pb-sm-4">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#" target="_blank" aria-current="page">ПРЕИМУЩЕСТВА
+                        <span class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link footer__link" href="#" target="_blank">Направления обучения</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link footer__link" href="#" target="_blank">Как записаться?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link footer__link" href="#" target="_blank">Отзывы</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link footer__link" href="#" target="_blank">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link footer__link" href="#" target="_blank">Контакты</a>
+                </li>
+            </ul>
+            <ul
+                class="d-flex flex-column flex-md-row gap-2 mt-2 flex-sm-row flex-column justify-content-between ps-0 mt-2 mt-lg-4">
+                <li class="nav-item">
+                    <a class="nav-link footer__link text-decoration-underline" href="#" target="_blank">ПОЛИТИКА
+                        КОНФИДЕНЦИАЛЬНОСТИ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link footer__link text-decoration-underline" href="#" target="_blank">ЮРИДИЧЕСКАЯ
+                        ИНФОРМАЦИЯ</a>
+                </li>
+                <li class="nav-item">
+                    <span class="d-inline"> Сайт разработал -
+                        <a class="nav-link footer__link text-decoration-underline d-inline-block" href="#"
+                            target="_blank">Иван Попов
+                        </a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=6e8912bf-594a-414d-920d-78709616135f"
+        type="text/javascript"></script>
+
+    <script src="https://kit.fontawesome.com/c0a9a5bcc6.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
